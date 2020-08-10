@@ -104,7 +104,7 @@ class Fuzzer:
             from .int import constructs as Int_constructs_module
             self.literals['int'] += [IntLiteral]
 
-            self.logic += 'NIA'
+            self.logic += 'NIRA'
             int_constructs = [o[1] for o in inspect.getmembers(Int_constructs_module) if inspect.isclass(o[1])]
             self.actions += int_constructs
             for const in int_constructs:
